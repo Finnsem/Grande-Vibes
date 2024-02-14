@@ -1,27 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active">GrandeVibes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/home']" routerLinkActive="router-link-active">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/find']" routerLinkActive="router-link-active">Search</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/aboutus']" routerLinkActive="router-link-active">About</a>
-          </li>
-         
-        </ul>
-        <input class="form-control me-sm-2" type="text" placeholder="Search videos..." [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()">
-      </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active">GrandeVibes</a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/find']" routerLinkActive="router-link-active">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="router-link-active">About</a>
+      </li>
+    </ul>
+    <form > <!-- Search bar always visible on large screens -->
+      <input class="form-control me-sm-2" type="text" placeholder="Search videos..." [(ngModel)]="searchQuery" (keyup.enter)="searchVideos()">
+    </form>
+  </div>
 </nav>

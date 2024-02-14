@@ -12,6 +12,7 @@ import * as $ from 'jquery';
 import { SearchResultComponent } from './searchresult/searchresult.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FindComponent } from './find/find.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 
 
@@ -22,7 +23,8 @@ import { FindComponent } from './find/find.component';
     NavbarComponent,
     SearchResultComponent,
     AboutusComponent,
-    FindComponent
+    FindComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,
