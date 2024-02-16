@@ -100,6 +100,7 @@ html {
 body {
   scrollbar-width: none;
   -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer, Edge */
+  z-index: 1;
 }
 h1{
   font-size: 45px;
