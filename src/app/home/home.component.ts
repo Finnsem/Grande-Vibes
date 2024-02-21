@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   countdown: any;
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer, private router: Router) {
-    this.countdownDate = new Date('March 7, 2024 00:00:00');
+    this.countdownDate = new Date('March 8, 2024 00:00:00');
 
     this.calculateCountdown();
     this.countdown = setInterval(() => {
